@@ -1,0 +1,43 @@
+/*
+==============================
+
+CUSTOM STYLE SHEET
+
+CREATED BY PUKAR SHRESTHA
+
+2016
+
+==============================
+*/
+
+body{
+    padding: 0px;
+}
+
+/*HEADER*/
+
+.skin-red .main-header .logo{
+	background-color: #171E21;
+}
+
+.skin-red .main-header .logo:hover{
+	background-color: #171E21;
+}
+
+.skin-red .content-header{
+	padding: 15px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+/*MISC*/
+
+.skin-red .sidebar-menu > li.header{
+    border-bottom: 0;
+}
+
+/*MAIN*/
+
+.box{
+	border-top: 0;
+}

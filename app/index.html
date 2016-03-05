@@ -1,0 +1,209 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css"/>
+    <link rel="stylesheet" href="bower_components/morris.js/morris.css"/>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="css/_all-skins.min.css">
+    <!-- <link rel="stylesheet" href="css/skin-red.min.css"> -->
+    <!-- iCheck -->
+    <!-- <link rel="stylesheet" href="plugins/iCheck/flat/blue.css"> -->
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="css/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="css/jquery-jvectormap-1.2.2.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="css/datepicker3.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/customstyleadmin.css">
+    <!-- endbuild -->
+</head>
+<body class="hold-transition skin-red sidebar-mini" ng-app="app">
+
+
+<div class="wrapper">
+
+    <header class="main-header">
+        <!-- Logo -->
+        <a href="index2.html" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>A</b>+</span>
+            <!-- logo for regular state and mobile devices -->
+            <!-- <span class="logo-lg"><b>Admin</b>LTE</span> -->
+            <span class="logo-lg"><img src="img/brand-aidsaid-alt.png"></span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+        </nav>
+    </header>
+
+
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar user panel -->
+
+            <!-- search form -->
+            <form action="#" method="get" class="sidebar-form">
+
+            </form>
+            <!-- /.search form -->
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="header">MAIN NAVIGATION</li>
+                <li>
+                    <a href="#/page1">
+                        <i class="fa"></i> <span>By Sub-Groups</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/page3">
+                        <i class="fa"></i> <span>By Age Groups</span>
+                    </a>
+                </li>
+                <!--<li>-->
+                <!--<a href="#/page4">-->
+                <!--<i class="fa"></i> <span>By Gender</span>-->
+                <!--</a>-->
+                <!--</li>-->
+                <li>
+                    <a href="#/page5">
+                        <i class="fa"></i> <span>By Region</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                Dashboard
+                <small>Control panel</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">Dashboard</li>
+            </ol>
+        </section>
+        <section class="content" ng-view="">
+
+            <!-- Charts -->
+
+
+        </section>
+
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 1.0
+        </div>
+        <strong>Copyright &copy; 2016 HACK AIDS.</strong> All rights reserved.
+    </footer>
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+
+
+</div>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.min.js"></script>
+
+<![endif]-->
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
+<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+<script src="bower_components/angular-ui-sortable/sortable.js"></script>
+<script src="bower_components/Chart.js/Chart.js"></script>
+<script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/restangular/dist/restangular.js"></script>
+<script src="bower_components/highcharts/highcharts.js"></script>
+<script src="bower_components/highcharts-ng/dist/highcharts-ng.js"></script>
+<script src="bower_components/raphael/raphael.js"></script>
+<script src="bower_components/mocha/mocha.js"></script>
+<script src="bower_components/morris.js/morris.js"></script>
+<script src="bower_components/angular-morris-chart/src/angular-morris-chart.min.js"></script>
+<script src="bower_components/angular-fusioncharts/dist/angular-fusioncharts.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/dashboard.js"></script>
+<script src="scripts/services/dashboard.service.js"/>
+
+<!-- endbuild -->
+
+<!-- Sparkline -->
+<script src="js/jquery.sparkline.min.js"></script>
+<!-- jvectormap -->
+<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="js/jquery-jvectormap-world-mill-en.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="js/jquery.knob.js"></script>
+<!-- daterangepicker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="js/app.min.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="js/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="js/demo.js"></script>
+</body>
+</html>
